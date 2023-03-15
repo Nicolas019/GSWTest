@@ -12,4 +12,4 @@ Microservice capable of handling transactions
 
   1- Open a terminal and go to the source project directory
   
-  2- Execute `./mvnw clean test` or `mvn clean test` if you have already installed it
+  2- Execute `./mvnw test` or `mvn test` if you have already installed it
