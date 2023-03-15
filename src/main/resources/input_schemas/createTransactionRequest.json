@@ -1,0 +1,8 @@
+{
+  "reference":"createTransactionTest",
+  "date":"2023-03-14T10:42:12.000+00:00",
+  "amount":17.00,
+  "fee":1.00,
+  "iban":"ES1111111111111111111111",
+  "description":"Restaurant payment"
+}

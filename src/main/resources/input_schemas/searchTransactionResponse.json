@@ -1,0 +1,10 @@
+[
+  {
+    "reference": "123",
+    "date": "2019-08-21T10:42:12.000+00:00",
+    "amount": 12.0,
+    "fee": 1.0,
+    "description": "Test description",
+    "iban": "ES9820385778983000760236"
+  }
+]
