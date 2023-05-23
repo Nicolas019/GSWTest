@@ -15,12 +15,12 @@ public class AppConfigTest {
     @Mock
     private static TransactionDao transactionDao;
     @Mock
-    private static BankAccountDao bankAccountDao;
+    private static BankAccountController bankAccountController;
 
     @BeforeEach
     void initialize() {
         MockitoAnnotations.openMocks(this);
-        testee = new AppConfig(transactionDao, bankAccountDao);
+        testee = new AppConfig(transactionDao, bankAccountController);
     }
 
     @Test
@@ -31,7 +31,7 @@ public class AppConfigTest {
 
     @Test
     void getBankAccountController_returnValidInstance(){
-        BankAccountController controller = testee.bankAccountController();
+        BankAccountController controller = testee.getBankAccountController();
         Assertions.assertNotNull(controller);
     }
 }

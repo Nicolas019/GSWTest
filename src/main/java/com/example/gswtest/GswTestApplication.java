@@ -18,25 +18,14 @@ import java.util.List;
 @Log4j2
 public class GswTestApplication {
 
-    private final BankAccountDao bankAccountDao;
     private final TransactionController controller;
 
-    public GswTestApplication(BankAccountDao bankAccountDao, TransactionController controller) {
-        this.bankAccountDao = bankAccountDao;
+    public GswTestApplication(TransactionController controller) {
         this.controller = controller;
     }
 
     public static void main(String[] args) {
         SpringApplication.run(GswTestApplication.class, args);
-    }
-
-    /**
-     * For visibility, it will show all the accounts registered in the system (HSQL in memory DB)
-     * Didn't include any Features as it wasn't on the requirements and would increase the length of the test
-     */
-    @GetMapping("/account")
-    public List<BankAccount> findAccount() {
-        return bankAccountDao.findAll();
     }
 
     /**
